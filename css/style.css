@@ -1,0 +1,90 @@
+    @import url('https://fonts.googleapis.com/css?family=Roboto:400,700');
+
+/* 讓所有大小的計算以borer-box為基礎 */
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    color: #4b4b5c;
+}
+
+body,
+heml {
+    padding: 0;
+    mar: 0;
+    background-color: #d39f57;
+}
+
+html {
+    width: 100%;
+    position: relative;
+}
+
+html:after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 400px;
+    background-color: red;
+    z-index: 1;
+}
+
+.cv {
+    position: relative;
+    width: 800px;
+    background-color: #white;
+    margin: 200px auto;
+    z-index: 5;
+    box-shadow: 0 5px 30px -10px rgba(0, 0, 0, 10), 0 20px 0 red;
+}
+
+
+/* note header */
+
+header {
+    background-color: #b7f7bc;
+    padding-top: 50px;
+    padding-bottom: 25px;
+}
+
+.name {
+    font-size: 50px;
+    letter-spacing: 1px;
+    margin-top: 0;
+    margin-bottom: 20px;
+    text-transform: capitalize;
+}
+
+.currentjobtitle {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+header,
+.intro,
+.experience-list,
+footer {
+    padding-left: 50px;
+    padding: -right:50px;
+}
+
+
+/* note experience */
+
+.experience {
+    border: 3px solid #red;
+}
+
+.experience:last-child {
+    border-bottom: none;
+    /* footer */
+    footer {
+        background-color: #ccc;
+        padding-top: 30px;
+        padding-bottom: 50px;
+    }
+    footer * {
+        color: white;
+    }
